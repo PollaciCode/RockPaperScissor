@@ -1,0 +1,60 @@
+import random #importing random generator
+import time #importing delay functions
+
+rpc_num = random.randint(1,3) #generate random number
+rpc = None
+
+if rpc_num == 1:
+  rpc = "rock" 
+
+elif rpc_num == 2: 
+  rpc = "paper" 
+
+else:
+  rpc = "scissors"  
+
+
+#print(rpc) #to show comp output for testing
+arr_rpc = ["Rock", "Paper", "Scissors"]
+
+player_name = input("what is your name?\n") #input for player name
+
+bool 
+
+print("Welcome", player_name ,"Lets play rock, paper, scissors." )
+time.sleep(1)
+print("Rock. . .")
+time.sleep(1)
+print("Paper. . .")
+time.sleep(1)
+print("Scissors. . .")
+time.sleep(1)
+print("Shoot!")
+
+player_rpc = input()
+if player_rpc == "rock":
+  player_rpc_num = 1
+
+elif player_rpc == "paper":
+  player_rpc_num = 2
+
+else:
+  player_rpc_num = 3 
+
+
+if rpc_num == player_rpc_num:
+  print("It's a tie")
+elif player_rpc_num == 3:
+  if rpc_num == 2:
+    print("you win")
+  elif rpc_num == 1:
+    print("you lose")
+elif player_rpc_num == 1:
+    if rpc_num > 1:
+      print("you win")
+
+elif player_rpc_num < 3:
+  if player_rpc_num > rpc_num:
+    print("you win")
+else:
+    print("you lose")
